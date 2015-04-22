@@ -21,3 +21,5 @@ script:
 - make distclean all crossbuild
 - if [[ $TRAVIS_PULL_REQUEST == false ]] ; then ./deploy ; fi
 - travis_retry ./install
+notifications:
+  -email : false
